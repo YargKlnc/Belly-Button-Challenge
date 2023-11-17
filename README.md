@@ -49,18 +49,18 @@ Completed steps in this assignment:
 
 * Advanced additional tasks completed:
 
-  •	Adapted the Gauge Chart from https://plot.ly/javascript/gauge-charts/ site. to plot the weekly washing frequency of the individual.
+    •	Adapted the Gauge Chart from https://plot.ly/javascript/gauge-charts/ site. to plot the weekly washing frequency of the individual.
 
-  •	The example gauge code was modified to account for values ranging from 0 through 9.
+    •	The example gauge code was modified to account for values ranging from 0 through 9.
 
-  •	Updated the chart whenever a new sample is selected.
+    •	Updated the chart whenever a new sample is selected.
 
  
 * Details:
 
-•	Console.log was used inside of JavaScript code to see what the data looks like at each step.
+    •	Console.log was used inside of JavaScript code to see what the data looks like at each step.
 
-•	Referred to the Plotly.js documentation to built the plots.
+    •	Referred to the Plotly.js documentation to built the plots.
 
 
 ### References
