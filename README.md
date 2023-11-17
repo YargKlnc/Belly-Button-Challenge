@@ -25,7 +25,9 @@ Completed steps in this assignment:
     o	Otu_ids were used as the labels for the bar chart.
 
     o	Otu_labels were used as the hovertext for the chart.
- 
+
+![image](https://github.com/YargKlnc/Belly-Button-Challenge/assets/142269763/efb15272-fa5c-4d9b-8c20-1a16409488bd)
+
 3.	A bubble chart was created that displays each sample.
 
     o	Otu_ids were used for the x values.
@@ -37,13 +39,19 @@ Completed steps in this assignment:
     o	Otu_ids were used for the marker colors.
 
     o	Otu_labels were used for the text values.
- 
+
+![image](https://github.com/YargKlnc/Belly-Button-Challenge/assets/142269763/fb2f8120-4030-46e9-a916-7b5966900808)
+
 4.	Displayed the sample metadata, i.e., an individual's demographic information.
 
 5.	Displayed each key-value pair from the metadata JSON object somewhere on the page.
- 
+
+![image](https://github.com/YargKlnc/Belly-Button-Challenge/assets/142269763/3d14f302-e783-4844-8c60-c995dd0ce957)
+
 6.	Updated all the plots when a new sample is selected. Additionally, a layout was created for the dashboard. 
- 
+
+![image](https://github.com/YargKlnc/Belly-Button-Challenge/assets/142269763/ed85746d-10f8-4e19-b96e-af39a564e30d)
+
 7.	Deployed the app to GitHub Pages a free static page hosting service. Submitted the links to the deployment and GitHub repo. 
 
 
@@ -55,6 +63,7 @@ Completed steps in this assignment:
 
     •	Updated the chart whenever a new sample is selected.
 
+![image](https://github.com/YargKlnc/Belly-Button-Challenge/assets/142269763/38357382-b87a-4869-8d33-67d907b90cdc)
  
 ** Details:
 
