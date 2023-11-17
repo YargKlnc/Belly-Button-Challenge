@@ -1,13 +1,13 @@
 # Belly-Button-Challenge
+
 UofT Data Analytics - Belly Button Challenge by YK
 
-![image](https://github.com/YargKlnc/Belly-Button-Challenge/assets/142269763/e84ce3ed-cf12-4a0a-b802-9161efb6f878)
+![image](https://github.com/YargKlnc/Belly-Button-Challenge/assets/142269763/0933e906-7380-4677-bc90-3255a7e70d35)
 
 
-**Background**
+### Background
 
-In this assignment, you will build an interactive dashboard to explore the Belly Button Biodiversity datasetLinks to an external site., which catalogs the microbes that colonize human navels.
-The dataset reveals that a small handful of microbial species (also called operational taxonomic units, or OTUs, in the study) were present in more than 70% of people, while the rest were relatively rare.
+** In this assignment, an interactive dashboard to explore the Belly Button Biodiversity datasetLinks to an external site was built, which catalogs the microbes that colonize human navels. The dataset reveals that a small handful of microbial species (also called operational taxonomic units, or OTUs, in the study) were present in more than 70% of people, while the rest were relatively rare. **
 
 Before You Begin
 
@@ -24,7 +24,8 @@ You will not be required to access the samples.json file locally, but it is prov
 
 5.	Deploy the new repository to GitHub Pages.
 
-**Instructions**
+
+### Instructions
 
 Complete the following steps:
 
@@ -97,5 +98,7 @@ Metadata and Deployment (30 points)
 •	Metadata updates when a new sample is selected (10 points)
 •	App Successfully Deployed to Github Pages (10 points)
 
-**References**
+
+### References
+
 Belly button photo rights belongs to: https://robdunnlab.com/projects/belly-button-biodiversity/
