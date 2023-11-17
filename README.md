@@ -1,6 +1,9 @@
 # Belly-Button-Challenge
 UofT Data Analytics - Belly Button Challenge by YK
 
+![image](https://github.com/YargKlnc/Belly-Button-Challenge/assets/142269763/e84ce3ed-cf12-4a0a-b802-9161efb6f878)
+
+
 **Background**
 
 In this assignment, you will build an interactive dashboard to explore the Belly Button Biodiversity datasetLinks to an external site., which catalogs the microbes that colonize human navels.
@@ -93,3 +96,6 @@ Metadata and Deployment (30 points)
 •	Metadata initializes without error (10 points)
 •	Metadata updates when a new sample is selected (10 points)
 •	App Successfully Deployed to Github Pages (10 points)
+
+**References**
+Belly button photo rights belongs to: https://robdunnlab.com/projects/belly-button-biodiversity/
