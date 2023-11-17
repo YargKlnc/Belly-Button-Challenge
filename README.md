@@ -20,43 +20,43 @@ Completed steps in this assignment:
 
 2.	A horizontal bar chart was created with a dropdown menu to display the top 10 OTUs found in that individual.
 
-  	o	Sample_values were used as the values for the bar chart.
+    o	Sample_values were used as the values for the bar chart.
 
-   o	Otu_ids were used as the labels for the bar chart.
+    o	Otu_ids were used as the labels for the bar chart.
 
-   o	Otu_labels were used as the hovertext for the chart.
+    o	Otu_labels were used as the hovertext for the chart.
  
 3.	A bubble chart was created that displays each sample.
 
-  	o	Otu_ids were used for the x values.
+    o	Otu_ids were used for the x values.
 
-   o	Sample_values were used for the y values.
+    o	Sample_values were used for the y values.
 
-   o	Sample_valueswere used for the marker size.
+    o	Sample_valueswere used for the marker size.
 
-   o	Otu_ids were used for the marker colors.
+    o	Otu_ids were used for the marker colors.
 
-   o	Otu_labels were used for the text values.
+    o	Otu_labels were used for the text values.
  
 4.	Displayed the sample metadata, i.e., an individual's demographic information.
 
 5.	Displayed each key-value pair from the metadata JSON object somewhere on the page.
  
-7.	Updated all the plots when a new sample is selected. Additionally, a layout was created for the dashboard. 
+6.	Updated all the plots when a new sample is selected. Additionally, a layout was created for the dashboard. 
  
-8.	Deployed the app to GitHub Pages a free static page hosting service. Submitted the links to the deployment and GitHub repo. 
+7.	Deployed the app to GitHub Pages a free static page hosting service. Submitted the links to the deployment and GitHub repo. 
 
-Advanced Challenge Assignment (Optional with no extra points earning)
 
-Additional task completed:
+* Advanced additional tasks completed:
 
   •	Adapted the Gauge Chart from https://plot.ly/javascript/gauge-charts/ site. to plot the weekly washing frequency of the individual.
 
   •	The example gauge code was modified to account for values ranging from 0 through 9.
 
   •	Updated the chart whenever a new sample is selected.
+
  
-Details:
+* Details:
 
 •	Console.log was used inside of JavaScript code to see what the data looks like at each step.
 
