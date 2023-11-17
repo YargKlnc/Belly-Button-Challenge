@@ -47,7 +47,7 @@ Completed steps in this assignment:
 7.	Deployed the app to GitHub Pages a free static page hosting service. Submitted the links to the deployment and GitHub repo. 
 
 
-* Advanced additional tasks completed:
+** Advanced additional tasks completed:
 
     •	Adapted the Gauge Chart from https://plot.ly/javascript/gauge-charts/ site. to plot the weekly washing frequency of the individual.
 
@@ -56,7 +56,7 @@ Completed steps in this assignment:
     •	Updated the chart whenever a new sample is selected.
 
  
-* Details:
+** Details:
 
     •	Console.log was used inside of JavaScript code to see what the data looks like at each step.
 
