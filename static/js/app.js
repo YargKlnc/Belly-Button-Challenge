@@ -1,10 +1,48 @@
-// Use the D3 library to read in samples.json from the URL https://2u-data-curriculum-team.s3.amazonaws.com/dataviz-classroom/v1.1/14-Interactive-Web-Visualizations/02-Homework/samples.json
+// Using the D3 library to read in samples.json from the URL https://2u-data-curriculum-team.s3.amazonaws.com/dataviz-classroom/v1.1/14-Interactive-Web-Visualizations/02-Homework/samples.json
 const url = "https://2u-data-curriculum-team.s3.amazonaws.com/dataviz-classroom/v1.1/14-Interactive-Web-Visualizations/02-Homework/samples.json";
-d3.json(url).then(function(data) {
-    console.log(data);
-});
 
-// Create a horizontal bar chart with a dropdown menu to display the top 10 OTUs found in that individual.
+function plotbarchart(otu_id) {
+    alert("I am plotting " + otu_id);
+
+}
+
+function demographicinfo(otu_id) {
+    alert("I am describing " + otu_id);
+    let panel = d3.select("#sample-metadata");
+    d3.json(url).then(function(data) {
+    let metadata = data.metadata;
+
+    
+
+    });
+
+}
+
+// Creating a init function to display dropdown, bar chart, bubble chart with each dataset
+function init() {
+    // create dropdown list of sample ids in dataset by appending each id as a new value
+    let dropdown = d3.select("#selDataset");
+    d3.json(url).then(function(data) {
+    let datanames = data.names;
+
+    for (let i = 0; i < datanames.length; i++) {
+        dropdown.append("option").text(datanames[i]).property("value");
+    }
+
+    });
+}
+
+function optionChanged(otu_ids)
+{
+    plotbarchart(otu_ids);
+    demographicinfo(otu_ids);
+}
+
+init();
+
+
+
+        // Creating a horizontal bar chart with a dropdown menu to display the top 10 OTUs found in that individual
 // Use sample_values as the values for the bar chart.
 // Use otu_ids as the labels for the bar chart.
 // Use otu_labels as the hovertext for the chart.
@@ -32,3 +70,19 @@ d3.json(url).then(function(data) {
 // Use console.log inside of your JavaScript code to see what your data looks like at each step.
 
 // Refer to the Plotly.js documentation when building the plots.
+
+// below is week 14-1-4 or use 14-1-11 for bar chart or 14-2-6
+// let name = 'Travis Taylor'
+// let title = `${name}'s First Plotly Chart`
+// let books = ["The Visual Display of Quantitative Information", "Automate the Boring Stuff", "Data Science from Scratch"]
+// let timesRead = [100, 50, 25]
+// let trace1 = {
+//   x: books,
+//   y: timesRead,
+//   type: 'bar'
+// };
+// let data = [trace1];
+// let layout = {
+//   title: title
+// };
+// Plotly.newPlot("plot", data, layout);
