@@ -67,7 +67,8 @@ Completed steps in this assignment:
 
     •	Updated the chart whenever a new sample is selected.
 
-![image](https://github.com/YargKlnc/Belly-Button-Challenge/assets/142269763/38357382-b87a-4869-8d33-67d907b90cdc)
+![image](https://github.com/YargKlnc/Belly-Button-Challenge/assets/142269763/44019686-eeaf-4882-8fce-e6c5a8e03804)
+
  
 ** Details:
 
