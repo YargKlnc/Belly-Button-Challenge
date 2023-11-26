@@ -48,8 +48,6 @@ Completed steps in this assignment:
 
 5.	Displayed each key-value pair from the metadata JSON object somewhere on the page.
 
-![image](https://github.com/YargKlnc/Belly-Button-Challenge/assets/142269763/3d14f302-e783-4844-8c60-c995dd0ce957)
-
 ![image](https://github.com/YargKlnc/Belly-Button-Challenge/assets/142269763/62893b98-4413-4996-ad2d-60607a4fa84d)
 
 
