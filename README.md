@@ -53,7 +53,8 @@ Completed steps in this assignment:
 
 6.	Updated all the plots when a new sample is selected. Additionally, a layout was created for the dashboard. 
 
-![image](https://github.com/YargKlnc/Belly-Button-Challenge/assets/142269763/ed85746d-10f8-4e19-b96e-af39a564e30d)
+![image](https://github.com/YargKlnc/Belly-Button-Challenge/assets/142269763/d0db66f4-c3c3-4495-a551-e0476fb28519)
+
 
 7.	Deployed the app to GitHub Pages a free static page hosting service. Submitted the links to the deployment and GitHub repo. 
 
