@@ -26,7 +26,8 @@ Completed steps in this assignment:
 
     o	Otu_labels were used as the hovertext for the chart.
 
-![image](https://github.com/YargKlnc/Belly-Button-Challenge/assets/142269763/efb15272-fa5c-4d9b-8c20-1a16409488bd)
+![image](https://github.com/YargKlnc/Belly-Button-Challenge/assets/142269763/62893b98-4413-4996-ad2d-60607a4fa84d)
+
 
 3.	A bubble chart was created that displays each sample.
 
@@ -40,7 +41,8 @@ Completed steps in this assignment:
 
     o	Otu_labels were used for the text values.
 
-![image](https://github.com/YargKlnc/Belly-Button-Challenge/assets/142269763/fb2f8120-4030-46e9-a916-7b5966900808)
+![image](https://github.com/YargKlnc/Belly-Button-Challenge/assets/142269763/cd68a284-a9f0-4220-aec7-377311083a92)
+
 
 4.	Displayed the sample metadata, i.e., an individual's demographic information.
 
