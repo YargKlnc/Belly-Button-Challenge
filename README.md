@@ -26,7 +26,7 @@ Completed steps in this assignment:
 
     o	Otu_labels were used as the hovertext for the chart.
 
-![image](https://github.com/YargKlnc/Belly-Button-Challenge/assets/142269763/62893b98-4413-4996-ad2d-60607a4fa84d)
+![image](https://github.com/YargKlnc/Belly-Button-Challenge/assets/142269763/a577260b-cb42-47e4-a594-ee4fd14b116a)
 
 
 3.	A bubble chart was created that displays each sample.
@@ -49,6 +49,9 @@ Completed steps in this assignment:
 5.	Displayed each key-value pair from the metadata JSON object somewhere on the page.
 
 ![image](https://github.com/YargKlnc/Belly-Button-Challenge/assets/142269763/3d14f302-e783-4844-8c60-c995dd0ce957)
+
+![image](https://github.com/YargKlnc/Belly-Button-Challenge/assets/142269763/62893b98-4413-4996-ad2d-60607a4fa84d)
+
 
 6.	Updated all the plots when a new sample is selected. Additionally, a layout was created for the dashboard. 
 
