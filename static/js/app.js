@@ -1,6 +1,9 @@
 // Storing url in variable for json data
 const url = "https://2u-data-curriculum-team.s3.amazonaws.com/dataviz-classroom/v1.1/14-Interactive-Web-Visualizations/02-Homework/samples.json";
 
+//console log to see what data looks like at this step
+console.log(url);
+
 // Creating a init function to display dropdown, bar chart, bubble chart with each dataset
 function init() {
     // fetch json data and logging to console
@@ -18,11 +21,11 @@ function init() {
         // for (let i = 0; i < sampleids.length; i++) {
         //     dropdown.append("option").text(sampleids[i]).property("value", sampleids[i]);
         // }
-        // pass first sample id and call functions to plot bar chart and bubble chart
-
+        
         // calling functions when first sample id is selected
         allchartvalues(sampleids[0]);
         demographicinfo(sampleids[0]);
+        console.log(sampleids[0]);
     });
 };
 
@@ -31,7 +34,11 @@ function optionChanged(passedid) {
     // calling functions when sample id is changed
     allchartvalues(passedid);
     demographicinfo(passedid);
+    console.log(passedid);
 };
+
+
+
 
 // adding init() to check if sample id selection is working at this step
 // init();
@@ -50,7 +57,9 @@ function allchartvalues(passedid) {
         let otu_labels = filtereddata[0].otu_labels;
         // calling functions to plot charts
         allcharts(sample_values, otu_ids, otu_labels);
+        
     });
+console.log(allchartvalues);
 };
 
 // function for bar and bubble charts
@@ -106,6 +115,9 @@ function allcharts(sample_values, otu_ids, otu_labels) {
     });
 };
 
+//console log to see what data looks like at this step
+console.log(allcharts);
+
 // adding init() to check if sample id selection is working at this step
 // init();
 
@@ -127,57 +139,107 @@ function demographicinfo(passedid) {
             panel.append("h6").text(`${key.toUpperCase()}: ${value}`);
         });
     });
+console.log(demographicinfo);
 };
+
+//console log to see what data looks like at this step
+console.log(demographicinfo);
 
 // adding init() to check if sample id selection is working at this step
 // init();
 
 // dont forget to activate <script src="./static/js/bonus.js"></script> in html at this step
 // creating a function to display gauge chart using https://plotly.com/javascript/gauge-charts/
+
+// building a gauge chart with wfreq data
 var data = [
     {
+        domain: { x: [0, 1], y: [0, 1] },
+        value: 2,
+        title: { text: "Belly Button Washing Frequency" },
         type: "indicator",
         mode: "gauge+number",
-        value: 4,
-        title: { text: "Belly Button Washing Frequency", font: { size: 24 } },
         gauge: {
-            axis: { range: [0, 9], tickwidth: 1, tickcolor: "darkblue" },
-            bar: { color: "darkblue" },
-            bgcolor: "white",
-            borderwidth: 2,
-            bordercolor: "gray",
+            axis: { range: [null, 9] },
             steps: [
-                { range: [0, 1], color: "cyan" },
-                { range: [1, 2], color: "lightcyan" },
-                { range: [2, 3], color: "lightblue" },
-                { range: [3, 4], color: "deepskyblue" },
-                { range: [4, 5], color: "dodgerblue" },
-                { range: [5, 6], color: "royalblue" },
-                { range: [6, 7], color: "mediumblue" },
-                { range: [7, 8], color: "darkblue" },
-                { range: [8, 9], color: "navy" }
-            ],
-            threshold: {
-                line: { color: "red", width: 4 },
-                thickness: 0.75,
-                value: 4.9
-            }
+                { range: [0, 1], color: "#f7fcfd" },
+                { range: [1, 2], color: "#e0ecf4" },
+                { range: [2, 3], color: "#bfd3e6" },
+                { range: [3, 4], color: "#9ebcda" },
+                { range: [4, 5], color: "#8c96c6" },
+                { range: [5, 6], color: "#8c6bb1" },
+                { range: [6, 7], color: "#88419d" },
+                { range: [7, 8], color: "#810f7c" },
+                { range: [8, 9], color: "#4d004b" }
+            ]
         }
     }
 ];
 
-var layout = {
-    width: 500,
-    height: 400,
-    margin: { t: 25, r: 25, l: 25, b: 25 },
-    paper_bgcolor: "lavender",
-    font: { color: "darkblue", family: "Arial" }
-};
+var layout = { width: 600, height: 500, margin: { t: 0, b: 0 } };
 
-Plotly.newPlot('gauge', data, layout);
+Plotly.newPlot("gauge", data, layout);
+    
+
+// creating a function to display gauge chart using https://plotly.com/javascript/gauge-charts/
+// function gaugechart(passedid) {
+//     // fetching json data
+//     d3.json(url).then(function(data) {
+//         // getting metadata
+//         let metadata = data.metadata;
+//         // getting data for demographic info
+//         let filtereddata = metadata.filter(sample => sample.id == passedid);
+//         // getting first element from filtered data
+//         let result = filtereddata[0];
+//         // getting wfreq data
+//         let wfreq = result.wfreq;
+//         // building a gauge chart with wfreq data
+//         var datagauge = [
+//             {
+//                 domain: { x: [0, 1], y: [0, 1] },
+//                 value: wfreq,
+//                 title: { text: "Belly Button Washing Frequency" },
+//                 type: "indicator",
+//                 mode: "gauge+number",
+//                 gauge: {
+//                     axis: { range: [null, 9] },
+//                     steps: [
+//                         { range: [0, 1], color: "#f7fcfd" },
+//                         { range: [1, 2], color: "#e0ecf4" },
+//                         { range: [2, 3], color: "#bfd3e6" },
+//                         { range: [3, 4], color: "#9ebcda" },
+//                         { range: [4, 5], color: "#8c96c6" },
+//                         { range: [5, 6], color: "#8c6bb1" },
+//                         { range: [6, 7], color: "#88419d" },
+//                         { range: [7, 8], color: "#810f7c" },
+//                         { range: [8, 9], color: "#4d004b" }
+//                     ]
+//                 }
+//             }
+//         ];
+//         var layout = { width: 600, height: 500, margin: { t: 0, b: 0 } };
+//         Plotly.newPlot("gauge", datagauge, layout);
+//     }).catch(function(error) {
+//         console.log(error);
+//     });
+// }
+
+// // Call the gaugechart function with the selected sample id
+// gaugechart(passedid);
 
 init();
 
+// Advanced Challenge Assignment (Optional)
+// Adapt the Gauge Chart from https://plot.ly/javascript/gauge-charts/ to plot the weekly washing frequency of the individual.
+// You will need to modify the example gauge code to account for values ranging from 0 through 9.
+// Update the chart whenever a new sample is selected.
+
+// Use console.log inside of your JavaScript code to see what your data looks like at each step.
+
+// Refer to the Plotly.js documentation when building the plots.
+
+// Call the gaugechart function with the selected sample id
+// gaugechart(passedid);
 
 // Advanced Challenge Assignment (Optional)
 // Adapt the Gauge Chart from https://plot.ly/javascript/gauge-charts/ to plot the weekly washing frequency of the individual.
