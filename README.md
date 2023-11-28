@@ -2,7 +2,9 @@
 
 UofT Data Analytics - Belly Button Challenge by YK
 
-# Click this link: https://yargklnc.github.io/Belly-Button-Challenge/
+Click below link to use the interactive charts to explore the dataset:
+
+**https://yargklnc.github.io/Belly-Button-Challenge/**
 
 
 ![image](https://github.com/YargKlnc/Belly-Button-Challenge/assets/142269763/0933e906-7380-4677-bc90-3255a7e70d35)
