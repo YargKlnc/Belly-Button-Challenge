@@ -88,6 +88,6 @@ Belly button photo rights belongs to: https://robdunnlab.com/projects/belly-butt
 
 Hulcr, J. et al. (2012) A Jungle in There: Bacteria in Belly Buttons are Highly Diverse, but Predictable. Retrieved from: http://robdunnlab.com/projects/belly-button-biodiversity/results-and-data/
 
-Plotly JavaScript Open Source Graphing Library was referred for building plots
+Plotly JavaScript Open Source Graphing Library was referred for building plots, https://plotly.com/javascript/
 
 D3 library was used to read in samples.json from the URL https://2u-data-curriculum-team.s3.amazonaws.com/dataviz-classroom/v1.1/14-Interactive-Web-Visualizations/02-Homework/samples.json
