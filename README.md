@@ -2,7 +2,7 @@
 
 UofT Data Analytics - Belly Button Challenge by YK
 
-**Click the link to explore the interactive charts: https://yargklnc.github.io/Belly-Button-Challenge/**
+**Click the link to visit Belly Button Biodiversity Dashboard & explore the interactive charts: https://yargklnc.github.io/Belly-Button-Challenge/**
 
 
 ![image](https://github.com/YargKlnc/Belly-Button-Challenge/assets/142269763/0933e906-7380-4677-bc90-3255a7e70d35)
