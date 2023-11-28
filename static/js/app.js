@@ -8,7 +8,7 @@ console.log(url);
 function init() {
     // fetch json data and logging to console
     d3.json(url).then(function(data) {
-
+        // console.log(data);
         // creating dropdown menu with list of sample ids
         let dropdown = d3.select("#selDataset");
         // receiving all sample ids from names in data file
@@ -25,22 +25,23 @@ function init() {
         // calling functions when first sample id is selected
         allchartvalues(sampleids[0]);
         demographicinfo(sampleids[0]);
-        console.log(sampleids[0]);
+        
     });
 };
+
+console.log(init);
 
 // creating a function when id is changed by user
 function optionChanged(passedid) {
     // calling functions when sample id is changed
     allchartvalues(passedid);
     demographicinfo(passedid);
-    console.log(passedid);
+
 };
 
+console.log(optionChanged);
 
-
-
-// adding init() to check if sample id selection is working at this step
+// adding init() to check html and if page is working at this step
 // init();
 
 // creating a function to be used for demographic info and charts
@@ -55,12 +56,19 @@ function allchartvalues(passedid) {
         let sample_values = filtereddata[0].sample_values;
         let otu_ids = filtereddata[0].otu_ids;
         let otu_labels = filtereddata[0].otu_labels;
+        console.log(sample_values);
+        console.log(otu_ids);
+        console.log(otu_labels);
+        // // creating a variable to hold the washing frequency
+        // let wfreq = parseFloat(metadata.wfreq);
+        // console.log(wfreq);
         // calling functions to plot charts
         allcharts(sample_values, otu_ids, otu_labels);
         
     });
-console.log(allchartvalues);
 };
+
+console.log(allchartvalues);
 
 // function for bar and bubble charts
 function allcharts(sample_values, otu_ids, otu_labels) {
@@ -118,9 +126,6 @@ function allcharts(sample_values, otu_ids, otu_labels) {
 //console log to see what data looks like at this step
 console.log(allcharts);
 
-// adding init() to check if sample id selection is working at this step
-// init();
-
 // creating a function to display demographic info
 function demographicinfo(passedid) {
     // fetching json data
@@ -139,114 +144,10 @@ function demographicinfo(passedid) {
             panel.append("h6").text(`${key.toUpperCase()}: ${value}`);
         });
     });
-console.log(demographicinfo);
+
 };
 
 //console log to see what data looks like at this step
 console.log(demographicinfo);
 
-// adding init() to check if sample id selection is working at this step
-// init();
-
-// dont forget to activate <script src="./static/js/bonus.js"></script> in html at this step
-// creating a function to display gauge chart using https://plotly.com/javascript/gauge-charts/
-
-// building a gauge chart with wfreq data
-var data = [
-    {
-        domain: { x: [0, 1], y: [0, 1] },
-        value: 2,
-        title: { text: "Belly Button Washing Frequency" },
-        type: "indicator",
-        mode: "gauge+number",
-        gauge: {
-            axis: { range: [null, 9] },
-            steps: [
-                { range: [0, 1], color: "#f7fcfd" },
-                { range: [1, 2], color: "#e0ecf4" },
-                { range: [2, 3], color: "#bfd3e6" },
-                { range: [3, 4], color: "#9ebcda" },
-                { range: [4, 5], color: "#8c96c6" },
-                { range: [5, 6], color: "#8c6bb1" },
-                { range: [6, 7], color: "#88419d" },
-                { range: [7, 8], color: "#810f7c" },
-                { range: [8, 9], color: "#4d004b" }
-            ]
-        }
-    }
-];
-
-var layout = { width: 600, height: 500, margin: { t: 0, b: 0 } };
-
-Plotly.newPlot("gauge", data, layout);
-    
-
-// creating a function to display gauge chart using https://plotly.com/javascript/gauge-charts/
-// function gaugechart(passedid) {
-//     // fetching json data
-//     d3.json(url).then(function(data) {
-//         // getting metadata
-//         let metadata = data.metadata;
-//         // getting data for demographic info
-//         let filtereddata = metadata.filter(sample => sample.id == passedid);
-//         // getting first element from filtered data
-//         let result = filtereddata[0];
-//         // getting wfreq data
-//         let wfreq = result.wfreq;
-//         // building a gauge chart with wfreq data
-//         var datagauge = [
-//             {
-//                 domain: { x: [0, 1], y: [0, 1] },
-//                 value: wfreq,
-//                 title: { text: "Belly Button Washing Frequency" },
-//                 type: "indicator",
-//                 mode: "gauge+number",
-//                 gauge: {
-//                     axis: { range: [null, 9] },
-//                     steps: [
-//                         { range: [0, 1], color: "#f7fcfd" },
-//                         { range: [1, 2], color: "#e0ecf4" },
-//                         { range: [2, 3], color: "#bfd3e6" },
-//                         { range: [3, 4], color: "#9ebcda" },
-//                         { range: [4, 5], color: "#8c96c6" },
-//                         { range: [5, 6], color: "#8c6bb1" },
-//                         { range: [6, 7], color: "#88419d" },
-//                         { range: [7, 8], color: "#810f7c" },
-//                         { range: [8, 9], color: "#4d004b" }
-//                     ]
-//                 }
-//             }
-//         ];
-//         var layout = { width: 600, height: 500, margin: { t: 0, b: 0 } };
-//         Plotly.newPlot("gauge", datagauge, layout);
-//     }).catch(function(error) {
-//         console.log(error);
-//     });
-// }
-
-// // Call the gaugechart function with the selected sample id
-// gaugechart(passedid);
-
 init();
-
-// Advanced Challenge Assignment (Optional)
-// Adapt the Gauge Chart from https://plot.ly/javascript/gauge-charts/ to plot the weekly washing frequency of the individual.
-// You will need to modify the example gauge code to account for values ranging from 0 through 9.
-// Update the chart whenever a new sample is selected.
-
-// Use console.log inside of your JavaScript code to see what your data looks like at each step.
-
-// Refer to the Plotly.js documentation when building the plots.
-
-// Call the gaugechart function with the selected sample id
-// gaugechart(passedid);
-
-// Advanced Challenge Assignment (Optional)
-// Adapt the Gauge Chart from https://plot.ly/javascript/gauge-charts/ to plot the weekly washing frequency of the individual.
-// You will need to modify the example gauge code to account for values ranging from 0 through 9.
-// Update the chart whenever a new sample is selected.
-
-// Use console.log inside of your JavaScript code to see what your data looks like at each step.
-
-// Refer to the Plotly.js documentation when building the plots.
-
