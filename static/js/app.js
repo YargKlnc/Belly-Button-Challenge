@@ -59,9 +59,6 @@ function allchartvalues(passedid) {
         console.log(sample_values);
         console.log(otu_ids);
         console.log(otu_labels);
-        // // creating a variable to hold the washing frequency
-        // let wfreq = parseFloat(metadata.wfreq);
-        // console.log(wfreq);
         // calling functions to plot charts
         allcharts(sample_values, otu_ids, otu_labels);
         
@@ -151,3 +148,4 @@ function demographicinfo(passedid) {
 console.log(demographicinfo);
 
 init();
+
